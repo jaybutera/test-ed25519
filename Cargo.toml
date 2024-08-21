@@ -8,3 +8,8 @@ resolver = "2"
 
 [workspace.dependencies]
 alloy-sol-types = "0.7.7"
+rand = "0.8.5"
+ed25519-consensus = "1"
+
+[patch.crates-io]
+ed25519-consensus = { git = "https://github.com/sp1-patches/ed25519-consensus", branch = "patch-v2.1.0" }
